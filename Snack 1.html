@@ -6,9 +6,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather|Dosis' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
     body {
       font-family: 'Dosis', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       margin: 0;
       padding: 0;
       background-color: #f8f8f8;
@@ -27,6 +35,10 @@
       color: #fff;
       text-align: center;
       padding: 0.5em;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
     }
 
     nav ul {
@@ -51,6 +63,7 @@
       padding: 2em;
       max-width: 800px;
       margin: 0 auto;
+      margin-top: 5em;
     }
 
     footer {
@@ -67,55 +80,78 @@
     img {
       max-width: 100%;
       height: auto;
+      border-radius: 5px;
+      margin-bottom: 1em;
+    }
+
+    /* Sidebar */
+    aside {
+      background-color: #f8f8f8;
+      padding: 2em;
+      position: fixed;
+      width: 250px;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 
 
     /* ... (rest of your CSS rules) ... */
 
-  </style>
+   </style>
   <title>Avocado Toast</title>
 </head>
 
 <body>
-<nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Receipies.html">Recipes</a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdHZWsSUfNlOwioRe0UF-xuhxUkRV0xoqc3Dq8DzzR_0qktpg/viewform?usp=sf_link">Buy</a></li>
+    </ul>
+  </nav>
 
-  <li> <a href="index.html">Home</a></li>
-  <li><a href="Receipies.html">Recipes</a></li>
-  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdHZWsSUfNlOwioRe0UF-xuhxUkRV0xoqc3Dq8DzzR_0qktpg/viewform?usp=sf_link">Buy</a></li>
+  <aside>
+    <h3>Related Recipes</h3>
+    <ul>
+      <li><a href="#">Grilled Chicken Salad</a></li>
+      <li><a href="#">Roasted Vegetables</a></li>
+      <li><a href="#">Quinoa Bowl</a></li>
+    </ul>
 
-</nav>
-<header>
-  <h1>Avocado Toast</h1>
-  <p>Serves 1, 240 Calories, 16g of fat</p>
-</header>
+    <h3>Nutritional Information</h3>
+    <ul>
+      <li>Calories: 240</li>
+      <li>Fat: 16g</li>
+      <li>Carbohydrates: 30g</li>
+      <li>Protein: 10g</li>
+    </ul>
+  </aside>
 
-<nav>
-  <ul>
-    <li></li>
-    <!-- Add more navigation links as needed -->
-  </ul>
-</nav>
+  <section id="home">
+    <h1>Avocado Toast</h1>
+    <p>Serves 1, 240 Calories, 16g of fat</p>
 
-<section id="home">
-  <h3>Ingredients:</h3>
-  <!-- Add images or icons for each ingredient if possible -->
-  <ul>
-    <li>1 avocado ripe</li>
-    <li>2 slices bread any kind, sourdough is my favorite</li>
-    <li>1 clove garlic cut in half (skin on)</li>
-    <li>salt, pepper and spices</li>
-    <li>lemon juice optional, from a fresh lemon is best</li>
-    <li>extra virgin olive oil good quality</li>
+    <img src="avocado-toast.jpg" alt="Avocado Toast">
 
-  </ul>
+    <h3>Ingredients:</h3>
+    <ul>
+      <li><img src="avocado.jpg" alt="Avocado"> 1 avocado ripe</li>
+      <li><img src="bread.jpg" alt="Bread"> 2 slices bread any kind, sourdough is my favorite</li>
+      <li><img src="garlic.jpg" alt="Garlic"> 1 clove garlic cut in half (skin on)</li>
+      <li><img src="salt.jpg" alt="Salt"> salt, pepper and spices</li>
+      <li><img src="lemon.jpg" alt="Lemon"> lemon juice optional, from a fresh lemon is best</li>
+      <li><img src="olive-oil.jpg" alt="Olive Oil"> extra virgin olive oil good quality</li>
+    </ul>
 
-  <h3>Instructions:</h3>
-  <ol>
-    <li>Halve the avocado and scoop out the pit.</li>
-    <li> Toast bread to your preference.</li>
-    <li>Gently brush the toast's surface with the chopped side of a fresh garlic clove while it's still hot.</li>
-    <li>Using a spoon, remove the avocado flesh and mash it onto the bread using a fork.</li>
-    <li>Add a dash of pepper and salt.</li>
-    <li>Garnish with olive oil and freshly squeezed lemon juice, or top with chosen toppings.</li>
-    <li>Serve right away.
+    <h3>Instructions:</h3>
+    <ol>
+      <li>Halve the avocado and scoop out the pit.</li>
+      <li> Toast bread to your preference.</li>
+      <li>Gently brush the toast's surface with the chopped side of a fresh garlic clove while it's still hot.</li>
+      <li>Using a spoon, remove the avocado flesh and mash it onto the bread using a fork.</li>
+      <li>Add a dash of pepper and salt.</li>
+      <li>Garnish with olive oil and freshly squeezed lemon juice, or top with chosen toppings.</li>
+      <li>Serve right away.</li>
     </li>
   </ol>
 </section>
